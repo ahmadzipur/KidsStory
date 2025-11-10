@@ -70,7 +70,7 @@ final List<Story> stories = [
   Story(
     id: 's4',
     title: 'Tunjukkan Bintangmu',
-    description: 'Ketika ada kemauan, di situ ada jalan',
+    description: 'Di mana ada kemauan, di situ ada jalan',
     coverImage: 'assets/images/TunjukkanBintangmu_page-0001.jpg',
     pages: [
       StoryPage(imagePath: 'assets/images/TunjukkanBintangmu_page-0002.jpg'),
