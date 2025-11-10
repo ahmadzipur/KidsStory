@@ -32,7 +32,7 @@ class FavoriteScreen extends StatelessWidget {
           return ListTile(
             leading: ClipRRect(
               borderRadius: BorderRadius.circular(8),
-              child: Image.network(s.coverImage, width: 56, fit: BoxFit.cover),
+              child: Image.asset(s.coverImage, height: 80, fit: BoxFit.cover),
             ),
             title: Text(s.title, style: GoogleFonts.comicNeue()),
             subtitle: Text(s.description),

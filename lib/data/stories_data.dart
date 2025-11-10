@@ -5,7 +5,7 @@ final List<Story> stories = [
   Story(
     id: 's1',
     title: 'Ibu Ayam',
-    description: 'Ibu Ayam',
+    description: 'Cerita ayam yang bertelur.',
     coverImage: 'assets/images/Ibu Ayam_page-0001.jpg',
     pages: [
       StoryPage(imagePath: 'assets/images/Ibu Ayam_page-0005.jpg'),
@@ -26,7 +26,7 @@ final List<Story> stories = [
   Story(
     id: 's2',
     title: 'Aku Sayang Adik',
-    description: 'Aku Sayang Adik',
+    description: 'Almaira dan adik-adiknya',
     coverImage: 'assets/images/AkuSayangAdik_page-0001.jpg',
     pages: [
       StoryPage(imagePath: 'assets/images/AkuSayangAdik_page-0002.jpg'),
@@ -37,8 +37,8 @@ final List<Story> stories = [
   ),
   Story(
     id: 's3',
-    title: 'Allah Menciptakan Segalanya ',
-    description: 'Allah Menciptakan Segalanya ',
+    title: 'Allah Menciptakan Segalanya',
+    description: 'Ciptaan Allah',
     coverImage: 'assets/images/AllahMenciptakanSegalanya_page-0001.jpg',
     pages: [
       StoryPage(
@@ -70,7 +70,7 @@ final List<Story> stories = [
   Story(
     id: 's4',
     title: 'Tunjukkan Bintangmu',
-    description: 'Aku Sayang Adik',
+    description: 'Ketika ada kemauan, di situ ada jalan',
     coverImage: 'assets/images/TunjukkanBintangmu_page-0001.jpg',
     pages: [
       StoryPage(imagePath: 'assets/images/TunjukkanBintangmu_page-0002.jpg'),
