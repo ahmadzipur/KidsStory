@@ -1,6 +1,7 @@
 // lib/screens/main_page.dart
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 import '../controllers/theme_controller.dart';
@@ -20,6 +21,17 @@ class _MainPageState extends State<MainPage> {
   int selectedIndex = 0;
 
   final pages = const [HomeScreen(), FavoriteScreen(), SettingsScreen()];
+
+  @override
+  void initState() {
+    super.initState();
+
+    // Kunci orientasi ke potrait saat halaman ini aktif
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+  }
 
   @override
   Widget build(BuildContext context) {

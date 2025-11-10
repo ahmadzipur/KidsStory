@@ -41,12 +41,10 @@ class _StoryDetailScreenState extends State<StoryDetailScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.circular(16),
                     child: Image.asset(
                       page.imagePath,
                       fit: BoxFit.cover,
                       width: double.infinity,
-                      height: MediaQuery.of(context).size.height * 0.45,
                     ),
                   ),
                 ],
@@ -137,7 +135,7 @@ class _StoryDetailScreenState extends State<StoryDetailScreen> {
                     shadows: [
                       Shadow(
                         blurRadius: 6,
-                        color: Colors.black.withValues(alpha: 0.6),
+                        color: Colors.black.withOpacity(0.6),
                         offset: const Offset(2, 2),
                       ),
                     ],
@@ -155,7 +153,7 @@ class _StoryDetailScreenState extends State<StoryDetailScreen> {
                       shadows: [
                         Shadow(
                           blurRadius: 6,
-                          color: Colors.black.withValues(alpha: 0.5),
+                          color: Colors.black.withOpacity(0.5),
                         ),
                       ],
                     ),
