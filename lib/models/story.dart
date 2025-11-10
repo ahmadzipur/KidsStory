@@ -1,9 +1,8 @@
 // lib/models/story.dart
 class StoryPage {
-  final String text;
   final String imagePath; // pake network atau asset path
 
-  StoryPage({required this.text, required this.imagePath});
+  StoryPage({required this.imagePath});
 }
 
 class Story {

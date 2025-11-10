@@ -35,7 +35,6 @@ class _StoryDetailScreenState extends State<StoryDetailScreen> {
           (page) => Container(
             width: double.infinity,
             height: double.infinity,
-            padding: const EdgeInsets.all(24),
             color: Theme.of(context).colorScheme.surface,
             child: SingleChildScrollView(
               child: Column(
@@ -48,15 +47,6 @@ class _StoryDetailScreenState extends State<StoryDetailScreen> {
                       fit: BoxFit.cover,
                       width: double.infinity,
                       height: MediaQuery.of(context).size.height * 0.45,
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-                  Text(
-                    page.text,
-                    style: GoogleFonts.comicNeue(
-                      fontSize: 20,
-                      height: 1.6,
-                      color: Theme.of(context).textTheme.bodyMedium?.color,
                     ),
                   ),
                 ],
@@ -147,7 +137,7 @@ class _StoryDetailScreenState extends State<StoryDetailScreen> {
                     shadows: [
                       Shadow(
                         blurRadius: 6,
-                        color: Colors.black.withOpacity(0.6),
+                        color: Colors.black.withValues(alpha: 0.6),
                         offset: const Offset(2, 2),
                       ),
                     ],
@@ -165,7 +155,7 @@ class _StoryDetailScreenState extends State<StoryDetailScreen> {
                       shadows: [
                         Shadow(
                           blurRadius: 6,
-                          color: Colors.black.withOpacity(0.5),
+                          color: Colors.black.withValues(alpha: 0.5),
                         ),
                       ],
                     ),
